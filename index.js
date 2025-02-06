@@ -16,8 +16,18 @@ async function readFileSync(){
     console.log(data)
 }
 
-
-
+//File Rename
+async function renameFileSync(){
+    await fs.renameSync('example.html','rename.html')
+     console.log("rename successfully")}
 (async()=>{
-    await  readFileSync()
+    await  renameFileSync()
 })()
+
+
+
+
+
+
+
+
