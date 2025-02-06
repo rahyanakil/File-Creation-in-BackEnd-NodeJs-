@@ -20,8 +20,15 @@ async function readFileSync(){
 async function renameFileSync(){
     await fs.renameSync('example.html','rename.html')
      console.log("rename successfully")}
+
+
+
+async function deleteFileSync(){
+    await fs.unlinkSync('deletefile.js')
+    console.log('delete successfully')
+}
 (async()=>{
-    await  renameFileSync()
+    await  deleteFileSync()
 })()
 
 
